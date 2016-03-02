@@ -1,0 +1,104 @@
+body
+{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+table
+{
+    width: 100%;
+}
+
+table.productsPanel tr td:first-child
+{
+    text-align: center;
+}
+
+table tr th
+{
+    color: cornflowerblue;
+    border-bottom: 1px solid cornflowerblue;
+}
+
+table a img
+{
+    max-height: 15px;
+    margin: 0 1.2%;
+}
+
+table a
+{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    min-width: 300px;
+}
+
+.mainMenu
+{
+    width: 100%;
+    background-color: gainsboro;
+    padding: 0.9%;
+}
+
+.mainMenu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.mainMenu a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.pagination
+{
+    margin-top: 1.2%;
+    text-align: center;
+}
+
+.pagination a
+{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login
+{
+    margin: 18% 0 0 35%;
+}
+
+.login input
+{
+    display: block;
+    margin-bottom: 1.1%;
+}
+
+.error
+{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.error .error-link a
+{
+    display: block;
+    border-bottom: 1px dotted cornflowerblue;
+    color: cornflowerblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1.1%;
+    max-width: 35%;
+    margin-left: 32%;
+}
