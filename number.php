@@ -1,7 +1,7 @@
 <?php
 
 $number = new Number();
-$number->calc(2664);
+$number->calc(2500);
 
 class Number
 {
@@ -70,7 +70,7 @@ class Number
             }
             $this->calc($number%10);
         }
-        elseif($number >= 1){
+        elseif($number >= 0){
 
             if($number < 4) {
                 for($i = 1; $i <= $number; $i++){
