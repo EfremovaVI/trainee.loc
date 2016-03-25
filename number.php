@@ -1,7 +1,7 @@
 <?php
 
 $number = new Number();
-$number->calc(3464);
+$number->calc(4000);
 
 class Number
 {
@@ -26,7 +26,10 @@ class Number
     public function calc($number)
     {
         // thousands
-        if ($number >= 1000) {
+        if($number >= 4000){
+            echo  'Number is greater than 3999 cannot be converted';
+        }
+        elseif ($number >= 1000) {
             $n = floor($number / 1000);
             for ($i = 1; $i <= $n; $i++) {
                 $this->_result[] = self::THOUSAND;
@@ -89,7 +92,7 @@ class Number
             }
 
             // result
-            echo implode('.', $this->_result);
+            echo implode('', $this->_result);
         }
     }
 }
