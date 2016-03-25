@@ -1,7 +1,6 @@
 <?php
-
 $number = new Number();
-$number->calc(4000);
+$number->calc(156);
 
 class Number
 {
@@ -28,8 +27,7 @@ class Number
         // thousands
         if($number >= 4000){
             echo  'Number is greater than 3999 cannot be converted';
-        }
-        elseif ($number >= 1000) {
+        } elseif ($number >= 1000) {
             $n = floor($number / 1000);
             for ($i = 1; $i <= $n; $i++) {
                 $this->_result[] = self::THOUSAND;
@@ -76,19 +74,19 @@ class Number
 
             // units
         } elseif ($number >= 0) {
-            if ($number < 4) {
-                for ($i = 1; $i <= $number; $i++) {
-                    $this->_result[] = self::ONE;
-                }
-            } elseif ($number == 4) {
-                $this->_result[] = self::FOUR;
+            if ($number == 9) {
+                $this->_result[] = self::NINE;
             } elseif ($number > 5 && $number < 9) {
                 $this->_result[] = self::FIVE;
                 for ($i = 1; $i <= ($number - 5); $i++) {
                     $this->_result[] = self::ONE;
                 }
-            } elseif ($number == 9) {
-                $this->_result[] = self::NINE;
+            } elseif ($number == 4) {
+                $this->_result[] = self::FOUR;
+            } elseif ($number < 4) {
+                for ($i = 1; $i <= $number; $i++) {
+                    $this->_result[] = self::ONE;
+                }
             }
 
             // result
